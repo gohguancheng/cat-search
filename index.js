@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4000;
 const controller = require("./routes.js");
 
 //app middleware
-app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "./client/dist")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
