@@ -16,7 +16,7 @@ open terminal<br>
 ensure node (v16.13.0) environment<br>
 npm install in root folder (including devDependencies)<br>
 cd into client folder and install<br>
-return root folder<br><br>
+return to root folder<br><br>
 
 #### For Development Server: <br>
 script => npm run go<br>
@@ -26,7 +26,7 @@ client should be running on designated local port (3000)<br><br>
 *cd into client folder* <br>
 *script => 'npm run build-only'*<br>
 *return to root folder*<br>
---- above steps only first time to create build (dist) folder ---<br>
+--- above steps only required on first attempt to create build (dist) folder ---<br>
 script => 'npm run go-prod'<br>
 client should be running on designated local port (4173)<br><br>
 
