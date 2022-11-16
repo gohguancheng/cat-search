@@ -17,6 +17,11 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/", controller);
 
+//for build
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/dist", "index.html"));
+});
+
 app.listen(PORT, () => {
   console.log("listening on port: " + PORT);
 });
